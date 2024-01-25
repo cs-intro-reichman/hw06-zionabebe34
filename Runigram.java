@@ -155,8 +155,8 @@ public class Runigram {
 	 */
 	public static Color[][] scaled(Color[][] image, int width, int height) {
 		Color[][] scaled = new Color[height][width];
-		double xRadio = (image[0].length) / width;
-		double yRadio = (image.length) / height; 
+		double xRadio = (double) (image[0].length) / width;
+		double yRadio =(double) (image.length) / height; 
 		for ( int x = 0; x < scaled.length; x++ ) {
 			for ( int y = 0; y < scaled[0].length; y++) {
 				scaled[x][y] = image[(int)( x * yRadio)][(int) (y * xRadio)];
