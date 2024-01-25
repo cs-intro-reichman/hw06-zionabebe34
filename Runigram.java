@@ -159,7 +159,7 @@ public class Runigram {
 		double yRadio = (image.length) / height; 
 		for ( int x = 0; x < scaled.length; x++ ) {
 			for ( int y = 0; y < scaled[0].length; y++) {
-				scaled[x][y] = image[(int)( x * xRadio)][(int) (y * yRadio)];
+				scaled[x][y] = image[(int)( x * yRadio)][(int) (y * xRadio)];
 			}
 		}
 		return scaled;
